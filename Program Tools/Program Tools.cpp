@@ -3,9 +3,9 @@
 
 #include "main.h"
 #include "bf.h"
-#define VERSION "V1.2 Build_2"
-#define VERWAY "CANARY"
-#define UPDATE "2020-2-23"
+#define VERSION "V1.2 Preview_1"
+#define VERWAY "DEV"
+#define UPDATE "2020-2-24"
 using namespace std;
 bool DEBUG;
 
@@ -80,9 +80,8 @@ int main(int argc, char** argv) {
 
 			color(14);
 			printf_s("\n------------------------------------\n\n");
-			printf_s("V1.2 Build_2 [Canary] 更新内容：\n");
-			printf_s("\t1. [内核] 改善输出性能\n");
-			printf_s("\t2. [编译] 使用 Release 编译\n");
+			printf_s("V1.2 Preview_1 [Dev] 更新内容：\n");
+			printf_s("\t1. [开发] 更改版本系统\n");
 
 			color(15);
 			printEndl(2);
