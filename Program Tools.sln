@@ -7,16 +7,22 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Program Tools", "Program To
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
-		Debug|x64 = Debug|x64
-		Debug|x86 = Debug|x86
+		Canary|x64 = Canary|x64
+		Canary|x86 = Canary|x86
+		Dev|x64 = Dev|x64
+		Dev|x86 = Dev|x86
 		Release|x64 = Release|x64
 		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{12319EBC-9241-4B3A-A63D-0BB2A5E798C2}.Debug|x64.ActiveCfg = Debug|x64
-		{12319EBC-9241-4B3A-A63D-0BB2A5E798C2}.Debug|x64.Build.0 = Debug|x64
-		{12319EBC-9241-4B3A-A63D-0BB2A5E798C2}.Debug|x86.ActiveCfg = Debug|Win32
-		{12319EBC-9241-4B3A-A63D-0BB2A5E798C2}.Debug|x86.Build.0 = Debug|Win32
+		{12319EBC-9241-4B3A-A63D-0BB2A5E798C2}.Canary|x64.ActiveCfg = Canary|x64
+		{12319EBC-9241-4B3A-A63D-0BB2A5E798C2}.Canary|x64.Build.0 = Canary|x64
+		{12319EBC-9241-4B3A-A63D-0BB2A5E798C2}.Canary|x86.ActiveCfg = Canary|Win32
+		{12319EBC-9241-4B3A-A63D-0BB2A5E798C2}.Canary|x86.Build.0 = Canary|Win32
+		{12319EBC-9241-4B3A-A63D-0BB2A5E798C2}.Dev|x64.ActiveCfg = Dev|x64
+		{12319EBC-9241-4B3A-A63D-0BB2A5E798C2}.Dev|x64.Build.0 = Dev|x64
+		{12319EBC-9241-4B3A-A63D-0BB2A5E798C2}.Dev|x86.ActiveCfg = Dev|Win32
+		{12319EBC-9241-4B3A-A63D-0BB2A5E798C2}.Dev|x86.Build.0 = Dev|Win32
 		{12319EBC-9241-4B3A-A63D-0BB2A5E798C2}.Release|x64.ActiveCfg = Release|x64
 		{12319EBC-9241-4B3A-A63D-0BB2A5E798C2}.Release|x64.Build.0 = Release|x64
 		{12319EBC-9241-4B3A-A63D-0BB2A5E798C2}.Release|x86.ActiveCfg = Release|Win32

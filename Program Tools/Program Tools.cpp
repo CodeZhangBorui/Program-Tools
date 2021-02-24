@@ -3,6 +3,9 @@
 
 #include "main.h"
 #include "bf.h"
+#define VERSION "V1.2 Build_2"
+#define VERWAY "CANARY"
+#define UPDATE "2020-2-23"
 using namespace std;
 bool DEBUG;
 
@@ -58,7 +61,15 @@ int main(int argc, char** argv) {
 			color(14);
 			printf_s("\tProram Tools，让编程更简单\n");
 			printEndl(1);
-			printf_s("\t版本: V1.6 (21H2), 2021-02-23 Update\n");
+
+			printf_s("\t版本: ");
+			printf_s(VERSION);
+			if (VERWAY == "CANARY") printf_s(" [Canary], ");
+			else if (VERWAY == "DEV") printf_s(" [Dev], ");
+			else printf_s(" [Release], ");
+			printf_s(UPDATE);
+			printf_s(" Update\n");
+
 			printf_s("\t语言: 中文简体 (zh-cn)\n");
 			printf_s("\t制作者: CodeZhangBorui By PowerCode Studio - 电力代码工作室 Code张博睿\n");
 			printf_s("\t制作语言: C++ 14, Visual Studio 2019\n");
@@ -69,14 +80,9 @@ int main(int argc, char** argv) {
 
 			color(14);
 			printf_s("\n------------------------------------\n\n");
-			printf_s("2020-02-23 (21H2) 更新内容：\n");
+			printf_s("V1.2 Build_2 [Canary] 更新内容：\n");
 			printf_s("\t1. [内核] 改善输出性能\n");
 			printf_s("\t2. [编译] 使用 Release 编译\n");
-
-			printf_s("\n------------------------------------\n\n");
-			printf_s("2020-02-21 (21H1) 更新内容：\n");
-			printf_s("\t1. [内核] C++ 标准从 C++11 升级到了 C++14\n");
-			printf_s("\t2. [开发] 开始使用 Visual Studio 2019 进行开发\n");
 
 			color(15);
 			printEndl(2);
