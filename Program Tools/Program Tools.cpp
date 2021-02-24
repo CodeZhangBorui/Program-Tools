@@ -24,7 +24,7 @@ int main(int argc, char** argv) {
 	startTime = clock();//计时开始
 	color(2);
 	printf_s("\n\n\n\n\t程序加载中...");
-	system("title Program Tools V1.6");
+	system("title Program Tools");
 	system("echo off");
 	system("c:");
 	system("cd C:/Windows/System32");
