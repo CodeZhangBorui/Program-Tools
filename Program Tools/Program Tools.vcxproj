@@ -263,11 +263,6 @@
     <ClInclude Include="bf.h" />
     <ClInclude Include="main.h" />
     <ClInclude Include="resource.h" />
-    <ClInclude Include="resource1.h" />
-    <ClInclude Include="resource2.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <ResourceCompile Include="Program Tools.rc" />
   </ItemGroup>
   <ItemGroup>
     <Image Include="C:\Users\zbr20_000\Desktop\Program Tools\演示文稿1\Beta.ico" />
@@ -277,6 +272,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="..\README.md" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Program Tools.rc" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
