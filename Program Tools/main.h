@@ -33,7 +33,7 @@ void cls(bool debug) { //«Â∆¡
 	system("cls");
 	if (debug) {
 		color(4);
-		printf("######################### [WARNING! DEBUG MODE OEPN!] #########################\n");
+		//printf("######################### [WARNING! DEBUG MODE OEPN!] #########################\n");
 	}
 }
 

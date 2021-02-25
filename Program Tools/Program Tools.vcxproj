@@ -263,9 +263,20 @@
     <ClInclude Include="bf.h" />
     <ClInclude Include="main.h" />
     <ClInclude Include="resource.h" />
+    <ClInclude Include="resource1.h" />
+    <ClInclude Include="resource2.h" />
   </ItemGroup>
   <ItemGroup>
-    <Image Include="..\..\..\..\..\电脑\图标集\Windows10\批处理文件.ico" />
+    <ResourceCompile Include="Program Tools.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="C:\Users\zbr20_000\Desktop\Program Tools\演示文稿1\Beta.ico" />
+    <Image Include="C:\Users\zbr20_000\Desktop\Program Tools\演示文稿1\Canary.ico" />
+    <Image Include="C:\Users\zbr20_000\Desktop\Program Tools\演示文稿1\Release.ico" />
+    <Image Include="Icon\Dev.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\README.md" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

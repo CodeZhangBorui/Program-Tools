@@ -3,7 +3,7 @@
 
 #include "main.h"
 #include "bf.h"
-#define VERSION "V1.2 Preview_1"
+#define VERSION "V1.2 Preview_2"
 #define VERWAY "DEV"
 #define UPDATE "2020-2-24"
 using namespace std;
@@ -33,9 +33,9 @@ int main(int argc, char** argv) {
 	cls(DEBUG); isDEBUG();
 
 	while (true) {
-	//top:;
+		//top:;
 		color(15);
-		printf_s("=================================Program Tools=================================\n");
+		printf_s(">[===============================Program Tools===============================]<\n");
 		printEndl(2);
 		color(3);
 		printf_s("\t----------程序菜单----------\n");
@@ -52,146 +52,154 @@ int main(int argc, char** argv) {
 		cls(DEBUG); isDEBUG();
 
 		switch (mode) {
-		case 1: {
-			color(15);
-			printf_s("=================================Program Tools=================================\n");
-			printEndl(2);
-			color(3);
-			printf_s("\t----------关于此程序----------\n");
-			color(14);
-			printf_s("\tProram Tools，让编程更简单\n");
-			printEndl(1);
-
-			printf_s("\t版本: ");
-			printf_s(VERSION);
-			if (VERWAY == "CANARY") printf_s(" [Canary], ");
-			else if (VERWAY == "DEV") printf_s(" [Dev], ");
-			else printf_s(" [Release], ");
-			printf_s(UPDATE);
-			printf_s(" Update\n");
-
-			printf_s("\t语言: 中文简体 (zh-cn)\n");
-			printf_s("\t制作者: CodeZhangBorui By PowerCode Studio - 电力代码工作室 Code张博睿\n");
-			printf_s("\t制作语言: C++ 14, Visual Studio 2019\n");
-			printEndl(1);
-			printf_s("欢迎投稿功能函数、反馈程序 BUG! 邮箱地址: ");
-			color(9);
-			printf_s("zhangborui@boxly.cn\n");
-
-			color(14);
-			printf_s("\n------------------------------------\n\n");
-			printf_s("V1.2 Preview_1 [Dev] 更新内容：\n");
-			printf_s("\t1. [开发] 更改版本系统\n");
-
-			color(15);
-			printEndl(2);
-			printf_s("按任意键退出...");
-			pause(true);
-			break;
-		}
-		case 2: {
-			color(3);
-			printf_s("----------程序菜单----------\n");
-			color(14);
-			printf_s("[0] 取消\n");
-			printf_s("[1] ASCII => 字符\n");
-			printf_s("[2] 字符 => ASCII\n");
-			printEndl(2);
-			color(15);
-			printf_s("请输入选择功能的序号：");
-			csi();
-			scanf_s("%1d", &modeEnter);
-			cls(DEBUG); isDEBUG();
-			color(15);
-			switch (modeEnter) {
 			case 1: {
-				color(3);
-				printf_s("----------程序菜单----------\n");
-				color(8);
-				printf_s("[0] 取消\n");
-				color(14);
-				printf_s("[1] ASCII => 字符\n");
-				color(8);
-				printf_s("[2] 字符 => ASCII\n");
-				printEndl(2);
 				color(15);
+				printf_s("=================================Program Tools=================================\n");
+				printEndl(2);
+				color(3);
+				printf_s("\t----------关于此程序----------\n");
+				color(14);
+				printf_s("\tProram Tools，让编程更简单\n");
+				printEndl(1);
 
-				char c;
-				printf_s("请输入要查询的 ASCII：");
-				csi();
-				scanf_s("%d", &c);
-				if (c >= 0 && c <= 177) printf_s("查询结果：%c\n\n", c);
-				else {
-					color(4);
-					printf_s("查询错误！请检查是否为标准 ASCII 码 (值为 0 到 177)\n\n");
-					color(15);
-				}
-				pause(false);
+				printf_s("\t版本: ");
+				printf_s(VERSION);
+				if (VERWAY == "CANARY") printf_s(" [Canary], ");
+				else if (VERWAY == "DEV") printf_s(" [Dev], ");
+				else printf_s(" [Release], ");
+				printf_s(UPDATE);
+				printf_s(" Update\n");
+
+				printf_s("\t语言: 中文简体 (zh-cn)\n");
+				printf_s("\t制作者: CodeZhangBorui By PowerCode Studio - 电力代码工作室 Code张博睿\n");
+				printf_s("\t制作语言: C++ 14, Visual Studio 2019\n");
+				printEndl(1);
+				printf_s("欢迎投稿功能函数、反馈程序 BUG! 邮箱地址: ");
+				color(9);
+				printf_s("zhangborui@boxly.cn\n");
+
+				color(14);
+				printf_s("\n------------------------------------\n\n");
+				printf_s("V1.2 Preview_2 [Dev] 更新内容：\n");
+				printf_s("\t1.[修复] 调试模式中警告信息会显示两次的问题\n");
+				printf_s("\t2.[外观] 增加错误指令提示\n");
+				printf_s("\t3.[外观] 增加主程序的图标\n");
+				printf_s("\t4.[代码] 代码清理\n");
+
+				color(15);
+				printEndl(2);
+				printf_s("按任意键退出...");
+				pause(true);
 				break;
 			}
 			case 2: {
 				color(3);
 				printf_s("----------程序菜单----------\n");
-				color(8);
+				color(14);
 				printf_s("[0] 取消\n");
 				printf_s("[1] ASCII => 字符\n");
-				color(14);
 				printf_s("[2] 字符 => ASCII\n");
 				printEndl(2);
 				color(15);
-
-				char c;
-				printf_s("请输入要查询的字符：");
+				printf_s("请输入选择功能的序号：");
 				csi();
-				scanf_s("%c", &c);
-				if (c >= 0 && c <= 177) printf_s("查询结果：%d\n\n", c);
-				else {
-					color(4);
-					printf_s("查询错误！请检查是否为标准 ASCII 码 (值为 0 到 177)\n\n");
+				scanf_s("%1d", &modeEnter);
+				cls(DEBUG); isDEBUG();
+				color(15);
+				switch (modeEnter) {
+				case 1: {
+					color(3);
+					printf_s("----------程序菜单----------\n");
+					color(8);
+					printf_s("[0] 取消\n");
+					color(14);
+					printf_s("[1] ASCII => 字符\n");
+					color(8);
+					printf_s("[2] 字符 => ASCII\n");
+					printEndl(2);
 					color(15);
+
+					char c;
+					printf_s("请输入要查询的 ASCII：");
+					csi();
+					scanf_s("%d", &c);
+					if (c >= 0 && c <= 177) printf_s("查询结果：%c\n\n", c);
+					else {
+						color(4);
+						printf_s("查询错误！请检查是否为标准 ASCII 码 (值为 0 到 177)\n\n");
+						color(15);
+					}
+					pause(false);
+					break;
 				}
+				case 2: {
+					color(3);
+					printf_s("----------程序菜单----------\n");
+					color(8);
+					printf_s("[0] 取消\n");
+					printf_s("[1] ASCII => 字符\n");
+					color(14);
+					printf_s("[2] 字符 => ASCII\n");
+					printEndl(2);
+					color(15);
+
+					char c;
+					printf_s("请输入要查询的字符：");
+					csi();
+					scanf_s("%c", &c);
+					if (c >= 0 && c <= 177) printf_s("查询结果：%d\n\n", c);
+					else {
+						color(4);
+						printf_s("查询错误！请检查是否为标准 ASCII 码 (值为 0 到 177)\n\n");
+						color(15);
+					}
+					pause(false);
+					break;
+				}
+				case 0: {
+					break;
+				}
+				}
+				break;
+			}
+			case 3: {
+				cls(DEBUG); isDEBUG();
+				color(14);
+				printf_s(">[命令提示符已打开，输入 exit 退出]<\n");
+				color(7);
+				system("cmd");
+				break;
+			}
+			case 4: {
+				brainfuck();
+				break;
+			}
+			case 9: {
+				cls(DEBUG); isDEBUG();
+				color(4);
+				printf_s("\nWARNING! DEBUG MODE SETTINGS!\n\n");
+				printf_s("DEBUG MODE OEPN! RESTART TOOLS TO RESET.\n");
+				DEBUG = true;
 				pause(false);
 				break;
 			}
 			case 0: {
+				color(7);
+				endTime = clock();
+				if (DEBUG) {
+					cls(DEBUG); isDEBUG();
+					printf_s("-----------------------------\n");
+					printf_s("DEBUG MODE: Process exited after %.3llf seconds with return value 0\n", (double)(endTime - startTime) / CLOCKS_PER_SEC);
+					pause(false);
+				}
+				return 0;
 				break;
 			}
-			}
-			break;
-		}
-		case 3: {
-			cls(DEBUG); isDEBUG();
-			color(14);
-			printf_s(">[命令提示符已打开，输入 exit 退出]<\n");
-			color(7);
-			system("cmd");
-			break;
-		}
-		case 4: {
-			brainfuck();
-			break;
-		}
-		case 9: {
-			cls(DEBUG); isDEBUG();
-			color(4);
-			printf_s("\nWARNING! DEBUG MODE SETTINGS!\n\n");
-			printf_s("DEBUG MODE OEPN! RESTART TOOLS TO RESET.\n");
-			DEBUG = true;
-			pause(false);
-			break;
-		}
-		case 0: {
-			color(7);
-			endTime = clock();
-			if (DEBUG) {
-				cls(DEBUG); isDEBUG();
-				printf_s("-----------------------------\n");
-				printf_s("DEBUG MODE: Process exited after %.3llf seconds with return value 0\n", (double)(endTime - startTime) / CLOCKS_PER_SEC);
+			default: {
+				printf_s("错误：无效的指令或参数\n");
 				pause(false);
+				break;
 			}
-			return 0;
-			break;
-		}
 		}
 		cls(DEBUG); isDEBUG();
 	}

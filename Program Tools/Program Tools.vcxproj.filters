@@ -29,10 +29,35 @@
     <ClInclude Include="resource.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="resource1.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="resource2.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <Image Include="..\..\..\..\..\电脑\图标集\Windows10\批处理文件.ico">
+    <ResourceCompile Include="Program Tools.rc">
+      <Filter>资源文件</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Icon\Dev.ico">
       <Filter>资源文件</Filter>
     </Image>
+    <Image Include="C:\Users\zbr20_000\Desktop\Program Tools\演示文稿1\Beta.ico">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="C:\Users\zbr20_000\Desktop\Program Tools\演示文稿1\Canary.ico">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="C:\Users\zbr20_000\Desktop\Program Tools\演示文稿1\Release.ico">
+      <Filter>资源文件</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\README.md">
+      <Filter>源文件</Filter>
+    </None>
   </ItemGroup>
 </Project>
